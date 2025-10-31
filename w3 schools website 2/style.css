@@ -1,0 +1,169 @@
+/* Basic Reset and Font */
+body {
+    font-family: 'Consolas', 'Source Code Pro', monospace; /* Faux W3Schools font look */
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1; /* Light gray background */
+}
+
+/* --- Top Navigation Bar (.topnav) --- */
+.topnav {
+    background-color: #04AA6D; /* W3Schools Green */
+    overflow: hidden;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tryit-btn {
+    background-color: #FFC0CB; /* W3Schools Pink/Purple for contrast */
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/* --- Main Layout Container --- */
+.main-container {
+    display: flex;
+    /* The layout is flexible (flex) to allow the sidebar and content to sit side-by-side */
+}
+
+/* --- Left Sidebar (.sidebar) --- */
+.sidebar {
+    width: 250px;
+    background-color: #e7e9eb; /* Light gray sidebar background */
+    padding-top: 20px;
+    height: calc(100vh - 60px); /* Adjust height for the topnav */
+    overflow-y: auto;
+    position: sticky; /* Keep the sidebar visible while scrolling */
+    top: 0;
+}
+
+.sidebar h3 {
+    padding: 10px 16px;
+    margin: 15px 0 5px 0;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar a {
+    display: block;
+    color: #444;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #ccc;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* --- Main Content Area (.content) --- */
+.content {
+    flex-grow: 1; /* Take up the remaining space */
+    padding: 20px 40px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.content h1 {
+    color: #555;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.section p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* --- Next/Previous Buttons --- */
+.nextprev {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.nextprev a {
+    background-color: #04AA6D; /* W3Schools Green */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nextprev a:hover {
+    background-color: #059862;
+}
+
+/* --- Example Box Styling (The Gray Box) --- */
+.example-box {
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.example-box h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.code-area {
+    background-color: #fff;
+    border-left: 5px solid #04AA6D;
+    padding: 15px;
+    overflow-x: auto;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.try-it {
+    background-color: #5cb85c; /* A lighter green for the "Try it" button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
